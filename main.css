@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./background\ image.jpg");
+  opacity: 2;
+
+  background-size: cover;
+  background-position: fixed;
+  position: relative;
+  background-attachment: fixed;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2.6em;
+  color: #68ce88;
+  cursor: pointer;
+}
+
+/* .logo span {
+    color: #22f1d9;
+  } */
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* .menu a:first-child {
+    color: #22f1d9;
+  } */
+
+.menu a:hover {
+  color: #e72300;
+  transition: 0.4s;
+}
+
+.icon i {
+  font-size: 20px;
+}
+
+.icon i:hover {
+  color: #22f1d9;
+}
+
+.icon a {
+  padding: 10px 20px;
+  background: #22f1d9;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.icon a:hover {
+  background: transparent;
+  border: 1px solid #22f1d9;
+  color: black;
+  transition: 0.4s ease;
+}
+
+.h-text {
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#cake {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.h-text h1 {
+  font-family: sans-serif;
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+.h-text input {
+  width: 60%;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.h-text button {
+  width: 30%;
+  padding: 20px;
+  background: #22f1d9;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.filter-gallery {
+  display: flex;
+  padding: auto;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h2 {
+  list-style: none;
+  display: inline-block;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+li.active {
+  background: #22f1d9;
+  color: white;
+  border-radius: 8px;
+}
+
+.member-info {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.member-info h1 {
+  font-size: 2.5em;
+}
+
+.member-info h1 span {
+  color: #22f1d9;
+}
+
+.member-card {
+  text-align: center;
+  padding-top: 50px;
+  width: 50%;
+  margin: auto;
+}
+
+.member-card p {
+  margin: 20px 0px;
+  line-height: 2em;
+}
+
+.member-card h2 {
+  margin: 20px 0px;
+}
+
+.m-images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  overflow: hidden;
+}
+
+.m-images img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.round-image {
+  border-radius: 50%;
+}
+
+.m-images img:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  background: #262626;
+  color: white;
+  width: 100%;
+  padding: 50px 100px;
+}
+
+.f-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.f-contact > div {
+  flex-basis: 20%;
+}
+
+.f-contact p {
+  line-height: 2em;
+  font-size: 20px;
+  color: grey;
+  cursor: pointer;
+}
+
+.f-contact p:hover {
+  color: white;
+}
+
+.f-contact i {
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px 5px;
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+
+.f-contact i:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.order-button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.social-icons {
+  text-align: center;
+  margin: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-iconsa:hover {
+  color: #007bff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
